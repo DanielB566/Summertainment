@@ -1,66 +1,67 @@
+body{
+    background-color: rgb(107, 201, 255);
+}
 
-
-/*button*/
-ul {
+/*navbar w/hovers*/
+.hover-6:before {
+    content: '';
     position: absolute;
-    top: 5%;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+    height: 3px;
+    background-color: #AA151B;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s;
+  }
+  .hover-6:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
+    height: 3px;
+    background-color: #AA151B;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
   }
-  ul li {
-    list-style: none;
+  .hover-6:hover:before {
+    transform: scaleX(1);
   }
-  ul li a {
+  .hover-6:hover:after {
+    transform: scaleX(1);
+  }
+  
+  .navbar {
+    background-color: black;
+    
+  }
+
+  .link {
+    display: inline-block;
     position: relative;
-    display: block;
-    text-transform: uppercase;
-    margin: 20px 0;
-    padding: 10px 20px;
     text-decoration: none;
-    color: #262626;
-    font-family: sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    transition: 0.5s;
-    z-index: 1;
-  }
-  ul li a:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-top: 2px solid #262626;
-    border-bottom: 2px solid #262626;
-    transform: scaleY(2);
-    opacity: 0;
-    transition: 0.7s;
-  }
-  ul li a:after {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #262626;
-    transform: scale(0);
-    opacity: 0;
-    transition: 0.7s;
-    z-index: -1;
-  }
-  ul li a:hover {
+    padding: 10px 0;
     color: #fff;
   }
-  ul li a:hover:before {
-    transform: scaleY(1);
-    opacity: 1;
+  .link-wrapper {
+    position: relative;
+  
   }
-  ul li a:hover:after {
-    transform: scaleY(1);
-    opacity: 1;
+  /*navbar w/hovers*/
+
+/*margin: top right bottom left*/
+  .img1{
+    max-width: 50%;
+    margin: 0% 25%;
   }
-  /*button*/
+
+  h1{
+    margin: 50px;
+    text-align: center;
+    font-size: 50px;
+  }
+
 
