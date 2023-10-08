@@ -1,8 +1,10 @@
 body{
     background-color: rgb(107, 201, 255);
+    justify-content: center;
+    text-align: center;
 }
 
-/*navbar w/hovers*/
+/*navbar w/hovrs  hovers are from this website https://www.sliderrevolution.com/resources/css-link-hover-effects/*/
 .hover-6:before {
     content: '';
     position: absolute;
